@@ -9,7 +9,7 @@ public:
     //}
 };
 
-class joko :public seseeorang {
+class joko :public seseorang {
 public: void pesan(){
         cout << "Pesan dari Joko" << endl;
     }
@@ -23,5 +23,15 @@ public:
 };
 
 int main() {
-    
-}
+    seseorang* obyek;
+    joko a;
+    Lia b;
+
+    obyek = &a;
+    obyek->pesan();
+    obyek = &b;
+    obyek->pesan();
+    //seseorang::pesan();
+
+    return 0;
+};
