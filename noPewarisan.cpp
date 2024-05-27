@@ -15,3 +15,9 @@ public:
     }
 };
 
+int main() {
+    deviredClass a;
+    a.perkenalan();
+
+    return 0;
+}
